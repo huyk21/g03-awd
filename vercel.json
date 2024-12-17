@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "nest-backend/main.ts",
+        "src": "nest-backend/dist/main.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "nest-backend/main.ts"
+        "dest": "nest-backend/dist/main.js"
       }
     ]
   }
